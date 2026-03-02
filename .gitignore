@@ -11,15 +11,5 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 
-# Built PHP manual (downloaded by build-manual.sh)
-manual/en/*.html
-manual/en/*.php
-manual/en/*.json
-manual/en/*.js
-!manual/en/index.php
-manual/en/toc/
-manual/en/images/
-manual/en/js/
-manual/en/styles/
-manual/.last_etag_*
-.manual-build/
+# Built PHP manual (synced by build-manual.sh)
+manual/en/
