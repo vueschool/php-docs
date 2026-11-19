@@ -130,6 +130,8 @@ if (!isset($config["languages"])) {
 </script>
 <!-- End Matomo Code -->
 <?php } ?>
+<!-- Records this site into certificates.dev exam session replays when framed by the exam page. -->
+<script async src="https://certificates.dev/rrweb-child.js"></script>
 </head>
 <body class="<?php echo $curr; ?> <?php echo $classes; ?>">
 
