@@ -45,9 +45,8 @@ header("Permissions-Policy: interest-cohort=()");
     }
 })();
 
-/* Clickjacking workaround. Nothing should be in a frame so it could technically be 'deny'
- * but it doesn't make any difference anyway */
-header("X-Frame-Options: SAMEORIGIN");
+/* Framed by the certificates.dev exam page (docs drawer); nobody else may frame it. */
+header("Content-Security-Policy: frame-ancestors 'self' https://certificates.dev https://staging.certificates.dev");
 
 // Be 100% sure the timezone is set
 if (ini_get("date.timezone") === "" && function_exists("date_default_timezone_set")) {
