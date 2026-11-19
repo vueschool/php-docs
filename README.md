@@ -1,3 +1,5 @@
+> **Production:** https://php-docs.certificates.dev — Laravel Forge deploys `master` (web directory `/public`). in the certificates.dev exam docs drawer. the PHP manual shown
+
 [![Integrate](https://github.com/php/web-php/actions/workflows/integrate.yaml/badge.svg)](https://github.com/php/web-php/actions/workflows/integrate.yaml)
 
 ## Local development
