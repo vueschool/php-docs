@@ -1,4 +1,5 @@
 /.build/
+/.php-cs-fixer.php
 /vendor/
 
 backend/mirror.gif
@@ -12,4 +13,4 @@ node_modules/
 /playwright/.cache/
 
 # Built PHP manual (synced by build-manual.sh)
-manual/en/
+/public/manual/en/

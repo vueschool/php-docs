@@ -33,7 +33,7 @@ for arg in "$@"; do
 done
 
 RSYNC_SOURCE="rsync://rsync.php.net/phpweb/manual/${LANG}/"
-MANUAL_DEST="${SCRIPT_DIR}/manual/${LANG}/"
+MANUAL_DEST="${SCRIPT_DIR}/public/manual/${LANG}/"
 # Persistent copy that outlives releases (Forge keeps releases/<id> next to shared/).
 MANUAL_CACHE="${MANUAL_CACHE:-${SCRIPT_DIR}/../../shared/manual/${LANG}}"
 
@@ -70,4 +70,4 @@ echo "    Files: ${TOTAL_FILES}"
 echo "    Path:  ${MANUAL_DEST}"
 echo ""
 echo "    To serve locally:"
-echo "      php -S localhost:8080 .router.php"
+echo "      cd public && php -S localhost:8080 .router.php"
